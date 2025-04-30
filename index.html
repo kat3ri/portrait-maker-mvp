@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portrait Maker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-xl mx-auto bg-white shadow p-6 rounded">
+    <h1 class="text-2xl font-bold mb-4">Create Your Model</h1>
+    <form action="/generate-portraits" method="post" class="space-y-4">
+      
+      <div>
+        <label for="gender" class="block font-medium">Gender</label>
+        <select name="gender" class="w-full border p-2 rounded">
+          <option value="Woman">Woman</option>
+          <option value="Man">Man</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="face_shape" class="block font-medium">Face Shape</label>
+        <select name="face_shape" class="w-full border p-2 rounded">
+          <option value="Oval">Oval</option>
+          <option value="Heart">Heart</option>
+          <option value="Square">Square</option>
+        </select>
+      </div>
+
+      <!-- Add more fields here -->
+      
+      <div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Generate Face
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
